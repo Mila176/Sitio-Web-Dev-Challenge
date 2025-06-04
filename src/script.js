@@ -2,20 +2,7 @@ document.getElementById("cambiar-tema").addEventListener("click", () => {
   document.body.classList.toggle("oscuro");
 });
 
-document.getElementById("formulario").addEventListener("submit", (e) => {
-  const nombre = document.getElementById("nombre").value;
-  const correo = document.getElementById("correo").value;
-  const carrera = document.getElementById("carrera").value;
-
-  const correoValido = correo.includes("@") && correo.includes(".com");
-
-  if (!nombre || !correo || !carrera || !correoValido) {
-    e.preventDefault();
-    alert("El formulario tiene que estar completo y con un correo válido (debe contener @ y .com).");
-  }
-});
-
-fetch("https://randomuser.me/api/?results=6")
+fetch("https://randomuser.me/api/?results=5")
   .then(res => res.json())
   .then(data => {
     const contenedor = document.getElementById("participantes");
