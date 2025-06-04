@@ -1,0 +1,9 @@
+{
+  "homepage": "https://mila176.github.io/Sitio-Web-Dev-Challenge/",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
